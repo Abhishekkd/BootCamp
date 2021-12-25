@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- navBar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 ps-2">
     <!-- to contain things into certain space -->
     <div class="container-fluid">
         <a class="navbar-brand" href="#">WebDev BootCamp</a>
@@ -23,7 +23,7 @@
         </button>
         <!-- so to collapse on smaller screens -->
         <!-- this div will be toggled when we click on hamburger menu cause we are targeting this using id -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="na-fluidvbarNav">
             <!-- margin start auto to align things to the right -->
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -39,7 +39,31 @@
         </div>
     </div>
 </nav>
-   
+  <!-- showCase  -->
+  <!-- p-5 padding all the way around and text to be centered -->
+<section class="bg-dark text-light p-5 text-center text-sm-start"> <!-- text small screens and up should start from start -->
+      <div class="container">
+          <!-- using flexbox to display two flex items i.e text and image (space between then is even) -->
+          <!-- only apply flex after small breakpoint so on mobile its gonna be up and down not flex row -->
+          <div class="d-sm-flex align-items-center justify-contents-center"><!-- flexbox this div that contains these flex items to align then side by side use flex row -->
+            <div><h1>Become a <span class="text-danger">Web Developer</span></h1>
+                <br>
+            <p class="lead my-4"> <!-- lead just make text bigger and  margin y axis    -->
+                This is the most comprehensive, yet straight-forward, course for the FrontEnd Web Development! Whether you
+                have never programmed before, already know some basics, or want to learn about the advanced features of FrontEnd Web Development, this
+                course is for you! In this course we will teach you everything u need to know about FrontEnd Web Developing.
+            </p>
+            <br>
+                 <button class="btn btn-warning btn-lg">Enroll Here!</button>
+            </div>
+            <!-- img fluid for image to be bound in the container -->
+            <!-- w-50 50% of the original size -->
+              <img class="img-fluid w-50 d-none d-sm-block" src="/i-mages/showcase.svg" alt="">  <!-- no div here --> 
+              <!-- img display name for sm screen sizes otherwise its block -->
+             
+        </div>
+    </div>
+</section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
