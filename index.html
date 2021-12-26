@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark py-4 ps-2">
     <!-- to contain things into certain space -->
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">WebDev BootCamp</a>
+        <a class="navbar-brand text-secondary" href="#"><b>WebDev BootCamp</b></a>
         <!-- data-bs means that we want the toggle to be collapse -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,9 @@
                 course is for you! In this course we will teach you everything u need to know about Frontend Web Developing.
             </p>
             <br>
-                 <button class="btn btn-warning btn-lg">Enroll Here!</button>
+            <!-- data-bs attributes added for our modal to work and target matches the id of the modal -->
+                 <button  class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                     Enroll Here!</button>
             </div>
             <!-- img fluid for image to be bound in the container -->
             <!-- w-50 50% of the original size -->
@@ -93,7 +95,8 @@
 <!-- using bootstrap grid (uses css grid) to create boxes -->
 <section class="p-5">
     <div class="container">
-        <div class="row text-center justify-contents-center align-items-center mx-auto"> <!-- to use grid use class of row so rows gonna surround our column,or even columns inside a row-->
+        <!-- g-4 gutter  i.e space all around -->
+        <div class="row text-center g-4"> <!-- to use grid use class of row so rows gonna surround our column,or even columns inside a row-->
            <!-- 3 even columns and inside these columns we wanna have cards -->
            <div class="col-md">
                <!-- card1 -->
@@ -114,7 +117,7 @@
                 </div>
 
            </div>
-           <div class="col-md my-2 my-md-0">
+           <div class="col-md">
                 <!-- card1 -->
                 <div class="card bg-dark text-light" style="width: 25rem;">
                     <div class="card-body text-center">
@@ -133,7 +136,7 @@
                     </div>
                 </div>
            </div>
-           <div class="col-md mt-2 mt-mb-0">
+           <div class="col-md">
                 <!-- card1 -->
                 <div class="card bg-dark text-light" style="width: 25rem;">
                     <div class="card-body text-center">
@@ -278,7 +281,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingfour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#query-Two">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#query-four">
                     Previous required knowledge?
                 </button>
             </h2>
@@ -387,7 +390,7 @@
 <section class="p-5">
     <div class="container">
         <div class="row g-5">
-            <div class="col-md">
+            <div class="col-md-6">
                 <h2 class="text-center mb-3">Contact Info</h2>
                 <!-- list group -->
                 <ul class="list-group list-group-flush lead">
@@ -413,12 +416,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md">
+            <div class="col-md-6">
                 <div id='map'></div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- footer -->
+<footer class="p-4 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead text-secondary"> <b> Copyright &copy; 2021 WebDev BootCamp</b></p>
+        <!-- so position of absolute within position relative -->
+        <a href="#" class="position-absolute bottom-0 end-0 p-4">
+            <i class="bi bi-arrow-up-circle text-danger h1"></i>
+        </a>
+    </div>
+</footer>
+
+
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
