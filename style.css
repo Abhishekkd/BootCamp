@@ -1,0 +1,6 @@
+/* over medium and up size input group should be half the size */
+@media (min-width: 768px) {
+  .newsletter-input {
+    width: 50%;
+  }
+}

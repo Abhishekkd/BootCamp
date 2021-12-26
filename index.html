@@ -41,7 +41,7 @@
 </nav>
   <!-- showCase  -->
   <!-- p-5 padding all the way around and text to be centered -->
-<section class="bg-dark text-light p-5 text-center text-sm-start"> <!-- text small screens and up should start from start -->
+<section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"> <!-- text small screens and up should start from start -->
       <div class="container">
           <!-- using flexbox to display two flex items i.e text and image (space between then is even) -->
           <!-- only apply flex after small breakpoint so on mobile its gonna be up and down not flex row -->
@@ -58,10 +58,26 @@
             </div>
             <!-- img fluid for image to be bound in the container -->
             <!-- w-50 50% of the original size -->
-              <img class="img-fluid w-50 d-none d-sm-block" src="/i-mages/showcase.svg" alt="">  <!-- no div here --> 
+              <img class="img-fluid w-50 mt-5 my-sm-0" src="/i-mages/showcase.svg" alt="">  <!-- no div here --> 
               <!-- img display name for sm screen sizes otherwise its block -->
-             
+             </div>
+    </div>
+</section>
+
+<!-- newsletter -->
+<section class="bg-primary text-white p-5">
+    <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+            <h3 class="mb-4 mb-md-0">Sign Up For Our Newsletter!!</h3><!-- margin bottom only for small screens -->
+            <div class="input-group newsletter-input"><!-- custom styling for input group -->
+                
+                <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <!-- aria attributes are good for accessibility purposes (as can be used for hearing impaired ) -->
+                <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Button</button>
+            </div>
         </div>
+        
     </div>
 </section>
 
