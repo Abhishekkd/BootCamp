@@ -1,3 +1,10 @@
+/* so as to push our content 60px down by adding a ghost element so while navigating navbar doesn't cover our content */
+body::before {
+  /* pseudo selector before */
+  display: block;
+  content: ""; /* while using before or after we need to add content */
+  height: 60px; /* ghost element of 60px to push the content down so sticky navBar pixel doesn't hide our content */
+}
 /* over medium and up size input group should be half the size */
 @media (min-width: 768px) {
   .newsletter-input {
