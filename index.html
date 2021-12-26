@@ -7,11 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <title>WebDev BootCamp</title>
 </head>
 <body>
+
+
     <!-- navBar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 ps-2">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark py-4 ps-2">
     <!-- to contain things into certain space -->
     <div class="container-fluid">
         <a class="navbar-brand" href="#">WebDev BootCamp</a>
@@ -39,6 +43,8 @@
         </div>
     </div>
 </nav>
+
+
   <!-- showCase  -->
   <!-- p-5 padding all the way around and text to be centered -->
 <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"> <!-- text small screens and up should start from start -->
@@ -49,9 +55,9 @@
             <div><h1>Become a <span class="text-danger">Web Developer</span></h1>
                 <br>
             <p class="lead my-4"> <!-- lead just make text bigger and  margin y axis    -->
-                This is the most comprehensive, yet straight-forward, course for the FrontEnd Web Development! Whether you
-                have never programmed before, already know some basics, or want to learn about the advanced features of FrontEnd Web Development, this
-                course is for you! In this course we will teach you everything u need to know about FrontEnd Web Developing.
+                This is the most comprehensive, yet straight-forward, course for the Frontend Web Development! Whether you
+                have never programmed before, already know some basics, or want to learn about the advanced features of Frontend Web Development, this
+                course is for you! In this course we will teach you everything u need to know about Frontend Web Developing.
             </p>
             <br>
                  <button class="btn btn-warning btn-lg">Enroll Here!</button>
@@ -63,6 +69,7 @@
              </div>
     </div>
 </section>
+
 
 <!-- newsletter -->
 <section class="bg-primary text-white p-5">
@@ -81,6 +88,141 @@
     </div>
 </section>
 
+
+<!-- using bootstrap grid (uses css grid) to create boxes -->
+<section class="p-5">
+    <div class="container">
+        <div class="row text-center ms-5 ms-md-0"> <!-- to use grid use class of row so rows gonna surround our column,or even columns inside a row-->
+           <!-- 3 even columns and inside these columns we wanna have cards -->
+           <div class="col-md mb-2 mb-md-0">
+               <!-- card1 -->
+                <div class="card bg-dark text-light" style="width: 25rem;">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">                            <!-- class of h1 to make things inside of it bigger like a h1 -->
+                             <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Online
+                        </h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptas id rerum optio sapiente soluta.
+                        </p>
+                        <!-- link with button(go nowhere) -->
+                        <a href="" class="btn btn-primary ">Read More</a>
+                    </div>
+                </div>
+
+           </div>
+           <div class="col-md my-2 my-md-0">
+                <!-- card1 -->
+                <div class="card bg-dark text-light" style="width: 25rem;">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <!-- class of h1 to make things inside of it bigger like a h1 -->
+                            <i class="bi bi-person-square"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Hybrid
+                        </h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptas id rerum optio sapiente soluta.
+                        </p>
+                        <!-- link with button(go nowhere) -->
+                        <a href="" class="btn btn-success">Read More</a>
+                    </div>
+                </div>
+           </div>
+           <div class="col-md mt-2 mt-mb-0">
+                <!-- card1 -->
+                <div class="card bg-dark text-light" style="width: 25rem;">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <!-- class of h1 to make things inside of it bigger like a h1 -->
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Offline
+                        </h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptas id rerum optio sapiente soluta.
+                        </p>
+                        <!-- link with button(go nowhere) -->
+                        <a href="" class="btn btn-danger">Read More</a>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</section>
+
+<!-- what you'll learn section -->
+<!-- using grid but could be made using flexbox -->
+<!-- giving it id as we want navigation to take us here -->
+<section class="p-3" id="learn">
+    <div class="container">
+        <!-- centering text and all that vertically using align items -->
+        <div class="row text-center align-items-center justify-content-between">
+            <!-- col-1 -->
+            <div class="col-md"><img class="img-fluid" src="./i-mages/fundamentals.svg" alt=""></div>
+            <!-- col-2 -->
+            <div class="col-md p-5">
+                <h3 class="p-2">Course Curriculum Basic</h3>
+                <p class="lead text-start">
+               <b> This course is a complete guide to become an expert front-end web developer. It contains all the tools and technologies
+                    that you should be proficient in work as a <span class="text-danger"> Frontend Developer.</span></b>
+                </p>
+                <ul class="text-start">
+                    <li> We will go through the journey of learning HTML5, CSS3, Javascript and React JS.</li>
+                    <li>Each of these course modules has a project which you can work on.</li>
+                    <li>Along with the project problem statement video, you will also find the solution video for that project. It is advised to
+                    first try working on the project by yourself.</li>
+                    <li>Once you have completed working on it, you can see the solution video to know what are the best practices and the most
+                    optimized way to complete it.</li>
+                    <li>You will definitely enjoy the journey while completing the course!</li>
+                    <li>As you keep on creating new projects, start adding them to your GitHub repository so that by the end of the course you
+                    will be having a place to showcase all your work.</li>
+                </ul>
+                <a href="" class="btn btn-light mt-3">
+                    <i class="bi-chevron-right"></i>
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="p-3 bg-dark text-light" id="learn">
+    <div class="container">
+        <!-- centering text and all that vertically using align items -->
+        <div class="row text-center align-items-center justify-content-between">
+            <!-- col-1 -->
+            
+            <div class="col-md p-5">
+                <h3 class="pb-3">Course Curriculum Advanced</h3>
+                <p class="lead text-start">
+                    <b> Master React and Redux with React Router, Webpack,Hooks and <span class="text-warning"> Create-React-App.</span></span></b>
+                </p>
+                <ul class="text-start">
+                <li>Master the fundamental features of React, including JSX, state, and props </li>
+                <li>From square one, understand how to build reusable components</li>
+                <li>Dive into the source code of Redux to understand how it works behind the scenes</li>
+                <li>Test your knowledge and hone your skills with numerous coding exercises</li>
+                <li>Integrate React with advanced browser features, even geolocation API's!</li>
+                <li>Use popular styling libraries to build beautiful apps</li>
+                <li>Master different techniques of deployment so you can show off the apps you build!</li>
+                <li>See different methods of building UI's through composition of components</li>
+                </ul>
+                <a href="" class="btn btn-dark  mt-3">
+                    <i class="bi-chevron-right"></i>
+                    Read More
+                </a>
+            </div>
+            <div class="col-md"><img class="img-fluid" src="./i-mages/fundamentals.svg" alt=""></div>
+            <!-- col-2 -->
+        </div>
+    </div>
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
