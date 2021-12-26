@@ -52,8 +52,9 @@
       <div class="container">
           <!-- using flexbox to display two flex items i.e text and image (space between then is even) -->
           <!-- only apply flex after small breakpoint so on mobile its gonna be up and down not flex row -->
-          <div class="d-sm-flex align-items-center justify-contents-center"><!-- flexbox this div that contains these flex items to align then side by side use flex row -->
-            <div><h1>Become a <span class="text-danger">Web Developer</span></h1>
+          <div class="d-sm-flex align-items-center justify-contents-between"><!-- flexbox this div that contains these flex items to align then side by side use flex row -->
+            <div>
+                <h1>Become a <span class="text-danger">Web Developer</span></h1>
                 <br>
             <p class="lead my-4"> <!-- lead just make text bigger and  margin y axis    -->
                 This is the most comprehensive, yet straight-forward, course for the Frontend Web Development! Whether you
@@ -62,12 +63,12 @@
             </p>
             <br>
             <!-- data-bs attributes added for our modal to work and target matches the id of the modal -->
-                 <button  class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                 <button  class="btn btn-warning btn-lg mb-5" data-bs-toggle="modal" data-bs-target="#enroll">
                      Enroll Here!</button>
             </div>
             <!-- img fluid for image to be bound in the container -->
             <!-- w-50 50% of the original size -->
-              <img class="img-fluid w-50 mt-5 my-sm-0" src="/i-mages/showcase.svg" alt="">  <!-- no div here --> 
+              <img class="img-fluid w-50 mt-5 my-0" src="/i-mages/showcase.svg" alt="">  <!-- no div here --> 
               <!-- img display name for sm screen sizes otherwise its block -->
              </div>
     </div>
@@ -100,7 +101,7 @@
            <!-- 3 even columns and inside these columns we wanna have cards -->
            <div class="col-md">
                <!-- card1 -->
-                <div class="card bg-dark text-light" style="width: 25rem;">
+                <div class="card bg-dark text-light" style="width: 22rem;">
                     <div class="card-body text-center">
                         <div class="h1 mb-3">                            <!-- class of h1 to make things inside of it bigger like a h1 -->
                              <i class="bi bi-laptop"></i>
@@ -119,7 +120,7 @@
            </div>
            <div class="col-md">
                 <!-- card1 -->
-                <div class="card bg-dark text-light" style="width: 25rem;">
+                <div class="card bg-dark text-light" style="width: 22rem;">
                     <div class="card-body text-center">
                         <div class="h1 mb-3">
                             <!-- class of h1 to make things inside of it bigger like a h1 -->
@@ -138,7 +139,7 @@
            </div>
            <div class="col-md">
                 <!-- card1 -->
-                <div class="card bg-dark text-light" style="width: 25rem;">
+                <div class="card bg-dark text-light" style="width: 22rem;">
                     <div class="card-body text-center">
                         <div class="h1 mb-3">
                             <!-- class of h1 to make things inside of it bigger like a h1 -->
@@ -441,7 +442,7 @@
             </div>
             <div class="modal-body">
             <p class="lead">Fill out this form to enroll</p>
-            <form >
+            <form>
                 <div class="mb-3">
                     <label for="name" class="col-form-label">
                         Name:

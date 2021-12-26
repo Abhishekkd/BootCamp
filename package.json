@@ -1,0 +1,23 @@
+{
+  "name": "bootcamp-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "geoMap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    ,"start":"node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhishekkd/BootCamp-UI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhishekkd/BootCamp-UI/issues"
+  },
+  "homepage": "https://github.com/Abhishekkd/BootCamp-UI#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
